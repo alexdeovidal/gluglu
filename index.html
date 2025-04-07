@@ -1,1 +1,101 @@
-<html><body><h1>Você está usando um modelo html-css-js</h1></body></html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda de iPhone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@1.4.7/dist/flowbite.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@1.4.7/dist/flowbite.min.js"></script>
+</head>
+<body class="bg-gray-900 text-white font-poppins">
+    <header class="fixed w-full bg-gray-800 shadow-lg">
+        <nav class="container mx-auto p-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-semibold">iPhone Sale</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#features" class="hover:text-gray-400">Recursos</a>
+                <a href="#pricing" class="hover:text-gray-400">Preços</a>
+                <a href="#contact" class="hover:text-gray-400">Contato</a>
+            </div>
+            <button class="md:hidden text-gray-400 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <main class="pt-20">
+        <section class="bg-gradient-to-r from-blue-500 to-purple-600 text-center py-20">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Adquira o Novo iPhone</h1>
+            <p class="text-lg md:text-2xl mb-8">Experimente a inovação e tecnologia de ponta.</p>
+            <a href="#contact" class="bg-white text-gray-900 px-6 py-3 rounded-full shadow-lg hover:bg-gray-200 transition">Saiba Mais</a>
+        </section>
+
+        <section id="features" class="container mx-auto py-16">
+            <h2 class="text-3xl font-semibold text-center mb-8">Recursos Incríveis</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">Câmera Avançada</h3>
+                    <p>Capture momentos com qualidade profissional.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">Desempenho Rápido</h3>
+                    <p>Processador ultrarrápido para todas as suas necessidades.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">Design Elegante</h3>
+                    <p>Estilo e sofisticação em cada detalhe.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="bg-gray-800 py-16">
+            <h2 class="text-3xl font-semibold text-center mb-8">Escolha seu Plano</h2>
+            <div class="flex justify-center space-x-8">
+                <div class="bg-gray-700 p-8 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-4">Básico</h3>
+                    <p class="text-2xl font-bold mb-4">R$ 3.999</p>
+                    <a href="#contact" class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition">Comprar</a>
+                </div>
+                <div class="bg-gray-700 p-8 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-4">Pro</h3>
+                    <p class="text-2xl font-bold mb-4">R$ 4.999</p>
+                    <a href="#contact" class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition">Comprar</a>
+                </div>
+                <div class="bg-gray-700 p-8 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-4">Empresarial</h3>
+                    <p class="text-2xl font-bold mb-4">R$ 5.999</p>
+                    <a href="#contact" class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition">Comprar</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="container mx-auto py-16">
+            <h2 class="text-3xl font-semibold text-center mb-8">Entre em Contato</h2>
+            <form class="max-w-lg mx-auto bg-gray-800 p-8 rounded-lg shadow-lg">
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-medium mb-2">Nome</label>
+                    <input type="text" id="name" class="w-full p-2 rounded bg-gray-900 border border-gray-700 focus:outline-none focus:border-blue-500">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium mb-2">Email</label>
+                    <input type="email" id="email" class="w-full p-2 rounded bg-gray-900 border border-gray-700 focus:outline-none focus:border-blue-500">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-sm font-medium mb-2">Mensagem</label>
+                    <textarea id="message" rows="4" class="w-full p-2 rounded bg-gray-900 border border-gray-700 focus:outline-none focus:border-blue-500"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-full hover:bg-blue-600 transition">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 iPhone Sale. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
